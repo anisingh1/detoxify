@@ -217,7 +217,7 @@ def cli_main():
         default_root_dir="saved/" + config["name"],
         deterministic=True,
     )
-    trainer.fit(model, data_loader, valid_data_loader)
+    trainer.fit(model, data_loader) #, valid_data_loader)
 
 
 if __name__ == "__main__":
